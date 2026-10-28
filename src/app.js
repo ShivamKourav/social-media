@@ -1,7 +1,5 @@
 const path = require("path");
 const express = require("express");
-app.set("trust proxy", 1);
-app.set("trust proxy", 1);
 const helmet = require("helmet");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -15,6 +13,7 @@ const postRoutes = require("./routes/posts");
 const notificationRoutes = require("./routes/notifications");
 
 const app = express();
+app.set("trust proxy", 1);
 const isProduction = process.env.NODE_ENV === "production";
 
 app.disable("x-powered-by");
