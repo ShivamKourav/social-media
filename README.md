@@ -14,28 +14,8 @@ Vibely is a light-theme, responsive mini social network built with HTML, CSS, Va
 
 ## Requirements
 
-- Node.js 18 or newer
-- npm
-- A MongoDB Atlas cluster and database user
 
-## Run on Windows
-
-1. Extract `Vibely_Social_Media_Platform.zip`.
-2. Open the extracted `Vibely_Social_Media_Platform` folder in VS Code.
-3. Open a terminal in that folder.
-4. Install dependencies:
-
-   ```powershell
-   npm install
-   ```
-
-5. Copy `.env.example` to `.env`:
-
-   ```powershell
-   Copy-Item .env.example .env
-   ```
-
-6. In MongoDB Atlas:
+1. In MongoDB Atlas:
    - Create a cluster if you do not already have one.
    - Create a database user and password.
    - In **Network Access**, allow your current IP address.
@@ -44,13 +24,13 @@ Vibely is a light-theme, responsive mini social network built with HTML, CSS, Va
    - Replace `SESSION_SECRET` with a long random secret.
    - Keep `.env` private; never upload it to GitHub.
 
-7. Start the app:
+1. Start the app:
 
    ```powershell
    npm run dev
    ```
 
-8. Open `http://localhost:3000`.
+3. Open `http://localhost:3000`.
 
 The server will not start until `MONGODB_URI` is set and Atlas can be reached.
 
